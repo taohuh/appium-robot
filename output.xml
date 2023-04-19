@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on darwin)" generated="20230419 16:49:56.077" rpa="false" schemaversion="3">
+<suite id="s1" name="Main" source="/Users/pimpakarn.wan/Workspace/appium-robot/main.robot">
+<test id="s1-t1" name="Open Test Application For android" line="5">
+<kw name="Open Test Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>remote_url=http://127.0.0.1:4723</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>automationName=uiautomator2</arg>
+<arg>platformName=Android</arg>
+<arg>appPackage=com.material.components</arg>
+<arg>appActivity=com.material.components.activity.MainMenu</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230419 16:49:56.176" endtime="20230419 16:50:01.344"/>
+</kw>
+<status status="PASS" starttime="20230419 16:49:56.176" endtime="20230419 16:50:01.344"/>
+</kw>
+<kw name="Close Popup When App Start">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.material.components:id/bt_close</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230419 16:50:01.756" level="INFO">criteria is com.material.components:id/bt_close</msg>
+<status status="PASS" starttime="20230419 16:50:01.344" endtime="20230419 16:50:01.756"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.material.components:id/bt_close</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230419 16:50:01.757" level="INFO">Clicking element 'id=com.material.components:id/bt_close'.</msg>
+<msg timestamp="20230419 16:50:01.801" level="INFO">criteria is com.material.components:id/bt_close</msg>
+<status status="PASS" starttime="20230419 16:50:01.756" endtime="20230419 16:50:01.801"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="AppiumLibrary">
+<arg>id=com.material.components:id/bt_close</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` disappears from current page.</doc>
+<msg timestamp="20230419 16:50:02.105" level="INFO">criteria is com.material.components:id/bt_close</msg>
+<status status="PASS" starttime="20230419 16:50:01.801" endtime="20230419 16:50:02.105"/>
+</kw>
+<status status="PASS" starttime="20230419 16:50:01.344" endtime="20230419 16:50:02.105"/>
+</kw>
+<kw name="Click Expansion Panels Menu">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>android=UiSelector().className("android.widget.TextView").text("Expansion Panels")</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20230419 16:50:02.106" endtime="20230419 16:50:02.477"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>android=UiSelector().className("android.widget.TextView").text("Expansion Panels")</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230419 16:50:02.479" level="INFO">Clicking element 'android=UiSelector().className("android.widget.TextView").text("Expansion Panels")'.</msg>
+<status status="PASS" starttime="20230419 16:50:02.477" endtime="20230419 16:50:02.566"/>
+</kw>
+<status status="PASS" starttime="20230419 16:50:02.106" endtime="20230419 16:50:02.567"/>
+</kw>
+<kw name="Click Basic Submenu">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>android=UiSelector().className("android.widget.TextView").text("Basic")</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20230419 16:50:02.567" endtime="20230419 16:50:03.875"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>android=UiSelector().className("android.widget.TextView").text("Basic")</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230419 16:50:03.877" level="INFO">Clicking element 'android=UiSelector().className("android.widget.TextView").text("Basic")'.</msg>
+<status status="PASS" starttime="20230419 16:50:03.875" endtime="20230419 16:50:03.965"/>
+</kw>
+<status status="PASS" starttime="20230419 16:50:02.567" endtime="20230419 16:50:03.965"/>
+</kw>
+<kw name="Cilck Input">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.LinearLayout[android.widget.TextView[@text='Input']]/android.widget.ImageButton</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230419 16:50:05.004" level="INFO">xpath criteria: //android.widget.LinearLayout[android.widget.TextView[@text='Input']]/android.widget.ImageButton
+xpath criteria: //android.widget.LinearLayout[android.widget.TextView[@text='Input']]/android.widget.ImageButton</msg>
+<status status="PASS" starttime="20230419 16:50:03.966" endtime="20230419 16:50:05.004"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.LinearLayout[android.widget.TextView[@text='Input']]/android.widget.ImageButton</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230419 16:50:05.006" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[android.widget.TextView[@text='Input']]/android.widget.ImageButton'.</msg>
+<msg timestamp="20230419 16:50:05.083" level="INFO">xpath criteria: //android.widget.LinearLayout[android.widget.TextView[@text='Input']]/android.widget.ImageButton</msg>
+<status status="PASS" starttime="20230419 16:50:05.004" endtime="20230419 16:50:05.083"/>
+</kw>
+<status status="PASS" starttime="20230419 16:50:03.965" endtime="20230419 16:50:05.083"/>
+</kw>
+<kw name="Click Female">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>android=UiSelector().className("android.widget.RadioButton").text("Female")</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20230419 16:50:05.084" endtime="20230419 16:50:05.953"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>android=UiSelector().className("android.widget.RadioButton").text("Female")</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230419 16:50:05.955" level="INFO">Clicking element 'android=UiSelector().className("android.widget.RadioButton").text("Female")'.</msg>
+<status status="PASS" starttime="20230419 16:50:05.953" endtime="20230419 16:50:06.017"/>
+</kw>
+<status status="PASS" starttime="20230419 16:50:05.084" endtime="20230419 16:50:06.018"/>
+</kw>
+<kw name="Click Save Button">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>android=UiSelector().className("android.widget.Button").text("SAVE")</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20230419 16:50:06.018" endtime="20230419 16:50:06.619"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>android=UiSelector().className("android.widget.Button").text("SAVE")</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230419 16:50:06.621" level="INFO">Clicking element 'android=UiSelector().className("android.widget.Button").text("SAVE")'.</msg>
+<status status="PASS" starttime="20230419 16:50:06.619" endtime="20230419 16:50:06.666"/>
+</kw>
+<status status="PASS" starttime="20230419 16:50:06.018" endtime="20230419 16:50:06.666"/>
+</kw>
+<status status="PASS" starttime="20230419 16:49:56.176" endtime="20230419 16:50:06.666"/>
+</test>
+<status status="PASS" starttime="20230419 16:49:56.079" endtime="20230419 16:50:06.666"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Main">Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
